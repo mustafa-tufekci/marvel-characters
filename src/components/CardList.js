@@ -6,7 +6,6 @@ import Loading from "./Loading";
 const CardList = ({ heroes, loading }) => {
   const navigate = useNavigate();
 
-  console.log(heroes);
   return (
     <Row md={4} xs={1}>
       {!loading ? (
