@@ -5,7 +5,7 @@ import axios from "axios";
 
 const HomePage = () => {
   const publicApiKey = process.env.REACT_APP_PUBLIC_API_KEY;
-  const apiBaseUrl = "http://gateway.marvel.com/v1/public/";
+  const apiBaseUrl = "https://gateway.marvel.com/v1/public/";
   const apiWithHash = `apikey=${publicApiKey}&hash=116b4552e8cd7f038bc9a7b31e114695`;
   const [url, setUrl] = useState(`${apiBaseUrl}characters?ts=1&${apiWithHash}`);
   const [loading, setLoading] = useState(true);

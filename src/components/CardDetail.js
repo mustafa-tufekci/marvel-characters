@@ -5,7 +5,7 @@ import { Row, Col, Image, ListGroup } from "react-bootstrap";
 
 const CardDetail = ({ id }) => {
   const publicApiKey = process.env.REACT_APP_PUBLIC_API_KEY;
-  const url = `http://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=${publicApiKey}&hash=116b4552e8cd7f038bc9a7b31e114695`;
+  const url = `https://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=${publicApiKey}&hash=116b4552e8cd7f038bc9a7b31e114695`;
   const [character, setCharacter] = useState();
 
   useEffect(() => {
