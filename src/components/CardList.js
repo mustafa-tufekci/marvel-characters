@@ -11,7 +11,7 @@ const CardList = ({ heroes, loading }) => {
       {!loading ? (
         heroes.map((item) => (
           <Col className="mb-3" key={item.id}>
-            <Card className="h-100" onClick={() => navigate(`/${item.id}`)}>
+            <Card className="h-100 cursor" onClick={() => navigate(`/${item.id}`)}>
               <Card.Img
                 className="h-100"
                 variant="top"

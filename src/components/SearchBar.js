@@ -17,16 +17,20 @@ const SearchBar = (props) => {
           <Col md={3}></Col>
           <Col md={6}>
             <Form.Control
-              placeholder="Hero Name"
-              aria-label="Hero Name"
+              placeholder="Character Name"
+              aria-label="Character Name"
               aria-describedby="basic-addon2"
               onChange={(e) => setSearch(e.target.value)}
               value={search}
             />
           </Col>
 
-          <Col md={3}>
-            <Button variant="outline-danger" id="button-addon2" onClick={submitHandler}>
+          <Col md={3} xs={3}>
+            <Button
+              variant="outline-danger"
+              id="button-addon2"
+              onClick={submitHandler}
+            >
               Search
             </Button>
           </Col>
